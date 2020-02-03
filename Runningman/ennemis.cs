@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using Godot;
 using System;
 
@@ -15,3 +16,5 @@ private void _on_Timer_timeout()
 {
 	// Replace with function body.
 }
+=======
+>>>>>>> 48a248dcdc6d9ca381465b05af622fa853831b2d
