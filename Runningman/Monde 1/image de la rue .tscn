@@ -1,0 +1,106 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://image la rue/tiles_spritesheet.png" type="Texture" id=1]
+
+[node name="image de la rue " type="Node"]
+
+[node name="rue milieu " type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 792, 144, 72, 72 )
+
+[node name="rue droite" type="Sprite" parent="."]
+position = Vector2( 97.9903, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 792, 72, 72, 72 )
+
+[node name="courbe gauche" type="Sprite" parent="."]
+position = Vector2( 203.704, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 792, 288, 72, 72 )
+
+[node name="courbe droite" type="Sprite" parent="."]
+position = Vector2( 297.583, 1.52588e-05 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 648, 720, 72, 72 )
+
+[node name="arbre" type="Sprite" parent="."]
+position = Vector2( 92.468, -113.602 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 864, 0, 72, 144 )
+
+[node name="rue gauche" type="Sprite" parent="."]
+position = Vector2( -93.8381, -0.830414 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 792, 216, 72, 72 )
+
+[node name="rue haut milieu " type="Sprite" parent="."]
+position = Vector2( -216.741, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 792, 360, 72, 72 )
+
+[node name="pente gauche" type="Sprite" parent="."]
+position = Vector2( -333.001, -0.830414 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 648, 576, 72, 72 )
+
+[node name="fin de pente droite " type="Sprite" parent="."]
+position = Vector2( -338.523, -116.011 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 792, 576, 72, 72 )
+
+[node name="fin de pente gauche" type="Sprite" parent="."]
+position = Vector2( -184.687, -118.377 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 792, 432, 72, 72 )
+
+[node name="pente droite" type="Sprite" parent="."]
+position = Vector2( -571.873, -108.827 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 792, 504, 72, 72 )
+
+[node name="basic" type="Sprite" parent="."]
+position = Vector2( -487.46, -122.239 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 504, 720, 72, 72 )
+
+[node name="rodin de bois" type="Sprite" parent="."]
+position = Vector2( -601.062, -119.872 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 288, 720, 72, 72 )
+
+[node name="pont" type="Sprite" parent="."]
+position = Vector2( -58.2959, -116.716 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 216, 72, 72, 72 )
+
+[node name="cube mystere" type="Sprite" parent="."]
+position = Vector2( 207.565, -119.872 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 144, 72, 72 )
+
+[node name="rue haut droite" type="Sprite" parent="."]
+position = Vector2( -520.677, -3.05176e-05 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 792, 648, 72, 72 )
+
+[node name="rue haut gauche" type="Sprite" parent="."]
+position = Vector2( -619.498, -0.830475 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 432, 720, 72, 72 )
