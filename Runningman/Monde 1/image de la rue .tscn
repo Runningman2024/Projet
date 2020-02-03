@@ -1,73 +1,160 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://image la rue/tiles_spritesheet.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 34.7337, 35.2493 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 34.7609, 35.0137 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 34.8967, 34.5986 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 35.4105, 34.6578 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 35.5195, 36.2665 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 34.3272, 34.2555 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 34.8967, 35.5909 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 35.6711, 35.085 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 34.6179, 34.6709 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 34.9165, 34.8649 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 35.3445, 35.1032 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 34.5597, 35.0497 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 34.6394, 35.5365 )
 
 [node name="image de la rue " type="Node"]
 
 [node name="rue milieu " type="Sprite" parent="."]
+position = Vector2( -6.06241, 2.3088 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 792, 144, 72, 72 )
+region_rect = Rect2( 791, 143, 72, 72 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="rue milieu "]
+position = Vector2( 22.3441, 8.0623 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rue milieu /StaticBody2D"]
+position = Vector2( -22.3441, -8.29266 )
+shape = SubResource( 1 )
 
 [node name="rue droite" type="Sprite" parent="."]
 position = Vector2( 97.9903, 0 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 792, 72, 72, 72 )
+region_rect = Rect2( 791, 71, 72, 72 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="rue droite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rue droite/StaticBody2D"]
+position = Vector2( 0.308945, 0 )
+shape = SubResource( 2 )
 
 [node name="courbe gauche" type="Sprite" parent="."]
 position = Vector2( 203.704, 0 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 792, 288, 72, 72 )
+region_rect = Rect2( 791, 287, 72, 72 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="courbe gauche"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="courbe gauche/StaticBody2D"]
+position = Vector2( 0, -7.62939e-06 )
+shape = SubResource( 13 )
 
 [node name="courbe droite" type="Sprite" parent="."]
 position = Vector2( 297.583, 1.52588e-05 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 648, 720, 72, 72 )
+region_rect = Rect2( 647, 719, 72, 72 )
 
 [node name="arbre" type="Sprite" parent="."]
 position = Vector2( 92.468, -113.602 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 864, 0, 72, 144 )
+region_rect = Rect2( 863, -1, 72, 144 )
 
 [node name="rue gauche" type="Sprite" parent="."]
 position = Vector2( -93.8381, -0.830414 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 792, 216, 72, 72 )
+region_rect = Rect2( 791, 215, 72, 72 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="rue gauche"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rue gauche/StaticBody2D"]
+shape = SubResource( 8 )
 
 [node name="rue haut milieu " type="Sprite" parent="."]
 position = Vector2( -216.741, 0 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 792, 360, 72, 72 )
+region_rect = Rect2( 792, 360, 72, 71 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="rue haut milieu "]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rue haut milieu /StaticBody2D"]
+position = Vector2( -0.659714, 0.329865 )
+shape = SubResource( 9 )
+one_way_collision = true
 
 [node name="pente gauche" type="Sprite" parent="."]
-position = Vector2( -333.001, -0.830414 )
+position = Vector2( -183.128, -189.446 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 648, 576, 72, 72 )
+region_rect = Rect2( 647, 575, 72, 72 )
 
 [node name="fin de pente droite " type="Sprite" parent="."]
 position = Vector2( -338.523, -116.011 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 792, 576, 72, 72 )
+region_rect = Rect2( 791, 575, 72, 72 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="fin de pente droite "]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fin de pente droite /StaticBody2D"]
+shape = SubResource( 3 )
 
 [node name="fin de pente gauche" type="Sprite" parent="."]
-position = Vector2( -184.687, -118.377 )
+position = Vector2( -217.02, -104.711 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 792, 432, 72, 72 )
+region_rect = Rect2( 791, 431, 72, 72 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="fin de pente gauche"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fin de pente gauche/StaticBody2D"]
+shape = SubResource( 4 )
 
 [node name="pente droite" type="Sprite" parent="."]
 position = Vector2( -571.873, -108.827 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 792, 504, 72, 72 )
+region_rect = Rect2( 791, 503, 72, 72 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pente droite"]
+position = Vector2( 0.47229, 0.944702 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pente droite/StaticBody2D"]
+shape = SubResource( 10 )
 
 [node name="basic" type="Sprite" parent="."]
 position = Vector2( -487.46, -122.239 )
@@ -75,32 +162,74 @@ texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 504, 720, 72, 72 )
 
+[node name="StaticBody2D" type="StaticBody2D" parent="basic"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="basic/StaticBody2D"]
+position = Vector2( -0.830444, -0.830429 )
+shape = SubResource( 5 )
+
 [node name="rodin de bois" type="Sprite" parent="."]
-position = Vector2( -601.062, -119.872 )
+position = Vector2( -672.43, -107.637 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 288, 720, 72, 72 )
+region_rect = Rect2( 287, 719, 72, 72 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="rodin de bois"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rodin de bois/StaticBody2D"]
+shape = SubResource( 6 )
+one_way_collision = true
 
 [node name="pont" type="Sprite" parent="."]
 position = Vector2( -58.2959, -116.716 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 216, 72, 72, 72 )
+region_rect = Rect2( 215, 71, 72, 72 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pont"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pont/StaticBody2D"]
+shape = SubResource( 7 )
+one_way_collision = true
 
 [node name="cube mystere" type="Sprite" parent="."]
 position = Vector2( 207.565, -119.872 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 0, 144, 72, 72 )
+region_rect = Rect2( -1, 143, 72, 72 )
 
 [node name="rue haut droite" type="Sprite" parent="."]
-position = Vector2( -520.677, -3.05176e-05 )
+position = Vector2( -519.677, -3.05176e-05 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 792, 648, 72, 72 )
+region_rect = Rect2( 791, 648, 72, 71 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="rue haut droite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rue haut droite/StaticBody2D"]
+shape = SubResource( 11 )
+one_way_collision = true
 
 [node name="rue haut gauche" type="Sprite" parent="."]
 position = Vector2( -619.498, -0.830475 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 432, 720, 72, 72 )
+region_rect = Rect2( 431, 720, 72, 71 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="rue haut gauche"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rue haut gauche/StaticBody2D"]
+shape = SubResource( 12 )
+one_way_collision = true
+
+[node name="vague" type="Sprite" parent="."]
+position = Vector2( -397.57, -24.3192 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 431, 575, 72, 72 )
+
+[node name="water2" type="Sprite" parent="."]
+position = Vector2( -305.235, 13.3438 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 503, 215, 72, 72 )

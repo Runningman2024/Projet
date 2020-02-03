@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://ennemis.gd" type="Script" id=1]
-[ext_resource path="res://ennemis.png" type="Texture" id=2]
+[ext_resource path="res://Monde 1/ennemis.gd" type="Script" id=1]
+[ext_resource path="res://Monde 1/ennemis.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 47.6804, 38.9802 )
