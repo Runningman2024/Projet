@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Monde 1/ennemis.png" type="Texture" id=1]
+[ext_resource path="res://Monde 1/Scènes/AnimationPlayer.cs" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 47.6804, 38.9802 )
@@ -38,7 +39,10 @@ shape = SubResource( 1 )
 texture = ExtResource( 1 )
 vframes = 2
 hframes = 5
-frame = 3
+frame = 1
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="ennemis/Sprite"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ennemis"]
 anims/Gauche = SubResource( 2 )
+script = ExtResource( 2 )
