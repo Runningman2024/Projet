@@ -51,9 +51,8 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ennemis.cs" />
     <Compile Include="Monde 1\Scènes\AnimationPlayer.cs" />
-    <Compile Include="new_script.cs" />
+    <Compile Include="Monde 1\Scènes\ennemis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

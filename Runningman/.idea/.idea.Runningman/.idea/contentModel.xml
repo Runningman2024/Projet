@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\johan\.Rider2019.2\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\johan\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\johan\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Runningman.828686441.00" t="ExcludeRecursive" />
+    <e p="C:\Users\johan\Documents\Projet\Runningman" t="IncludeRecursive">
+      <e p=".mono\temp\bin" t="ExcludeRecursive" />
+      <e p=".mono\temp\obj" t="ExcludeRecursive" />
+      <e p="Monde 1" t="Include">
+        <e p="Scènes" t="Include">
+          <e p="AnimationPlayer.cs" t="Include" />
+          <e p="ennemis.cs" t="Include" />
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+      <e p="Runningman.csproj" t="IncludeRecursive" />
+      <e p="Runningman.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

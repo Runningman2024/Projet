@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Runningman"
-run/main_scene="res://Monde 1/Scènes/Ennemis2.0.tscn"
+run/main_scene="res://Monde 1/Scènes/monde 1 street.tscn"
 config/icon="res://icon.png"
 
 [rendering]
